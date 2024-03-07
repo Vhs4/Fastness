@@ -1,3 +1,18 @@
+## MID - ORACLE - FIAP
+
+Projeto de criação de rede social corporativa para marcar reuniões entre pessoas executivas
+que não se conhecem, projeto criado durante o MID da Oracle com a FIAP.
+
+Líder da equipe (B2B e Head de tecnologias): Victor Hugo
+
+Front-end: Victor Hugo e Letícia Zago
+
+Back-end: Victor Hugo e Neto
+
+UX/UI: Matheus e Goularti
+
+Marketing: Victor Hugo e Letícia Zago
+
 ## Instruções gerais da organização das pastas
 
 `assets`: Serve para armazenar imagens (imagens leves, se forem pesadas sempre prefira hospedar em uma CDN), ícones, etc.
