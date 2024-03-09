@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import './styles.css';
 import Logo from '../../../public/svgs/Logo';
 
