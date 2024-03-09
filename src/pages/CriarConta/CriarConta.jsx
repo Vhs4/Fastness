@@ -6,7 +6,6 @@ import Logo from '../../../public/svgs/Logo';
 const CriarConta = () => {
     return (
         <>
-            <p className='blur'>Eae</p>
             <Modal show={true} className='modal-80w'>
                 <Modal.Body>
                     <div className="">
@@ -20,23 +19,23 @@ const CriarConta = () => {
                                     </button>
                                 </div>
                             </div>
-                            <div className="col-md-6 flex justify-center">
+                            <div className="col flex justify-center">
                                 <div className='d-flex flex-column gap-1'>
                                     <div className='flex items-center justify-center'>
-                                    <Logo className='mt-4 ' />
+                                        <Logo className='mt-4 ' />
                                     </div>
                                     <h3 className='font-bold text-center'>Crie sua conta</h3>
                                     <label className='mt-8 font-bold' htmlFor="nome">Nome completo</label>
-                                    <input className='bg-[#d9d9d9] rounded-md w-[400px] h-8 flex pl-4' type="text" name='nome' placeholder='Insira seu nome' />
+                                    <input className='bg-[#d9d9d9] rounded-md md:w-[400px] h-8 flex pl-4' type="text" name='nome' placeholder='Insira seu nome' />
                                     <label className='mt-8 font-bold' htmlFor="email">Email</label>
-                                    <input className='bg-[#d9d9d9] rounded-md w-[400px] h-8 flex pl-4' type="email" name='email' placeholder='Insira seu e-mail' />
+                                    <input className='bg-[#d9d9d9] rounded-md md:w-[400px] h-8 flex pl-4' type="email" name='email' placeholder='Insira seu e-mail' />
                                     <label className='mt-8 font-bold' htmlFor="nascimento">Data de nascimento</label>
-                                    <input className='bg-[#d9d9d9] rounded-md w-[400px] justify-center h-8 flex pl-4' type="date"
-                                    name='nascimento' placeholder='Insira sua data de nascimento' />
+                                    <input className='bg-[#d9d9d9] rounded-md md:w-[400px] justify-center h-8 flex pl-4' type="date"
+                                        name='nascimento' placeholder='Insira sua data de nascimento' />
                                     <label className='mt-8 font-bold' htmlFor="password">Senha</label>
-                                    <input className='bg-[#d9d9d9] rounded-md w-[400px] h-8 flex pl-4' type="password" name='password' placeholder='Insira sua senha' />
+                                    <input className='bg-[#d9d9d9] rounded-md md:w-[400px] h-8 flex pl-4' type="password" name='password' placeholder='Insira sua senha' />
                                     <div className='flex justify-center'>
-                                    <button className='mt-12 w-36 h-12 rounded-md text-white bg-[#00BF63]'>Cadastrar</button>
+                                        <button className='mt-12 w-36 h-12 rounded-md text-white bg-[#00BF63]'>Cadastrar</button>
                                     </div>
                                 </div>
                             </div>
