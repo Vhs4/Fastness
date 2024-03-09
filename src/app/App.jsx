@@ -6,10 +6,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        </BrowserRouter>
+        <div className='container'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </>
   )
 }
