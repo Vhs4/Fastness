@@ -32,6 +32,24 @@ const Home = () => {
         representantes de acordo com seus interesses,<br></br> além de ter a opção de bate-papo via chat.  Na<br></br> 
         conclusão da sua negociação, é possível escolher <br></br> um lugar para se encontrar e conversar pessoalmente <br></br> 
         com o representante do seu interesse.</p>
+        <img src="/img/celular.png" class="img_header1" alt="celular"></img>
+        <img src="/img/home2.png" class="img_header1" alt="celular"></img>
+        <div className="div1">
+          <h3>Encontre seus interesses</h3>
+          <p>Filtre por interesses comerciais e descubra pessoas para negociar.</p>
+        </div>
+        <div className="div2">
+          <h3>Converse e crie laços</h3>
+          <p>Filtre por interesses comerciais e descubra pessoas para negociar.</p>
+        </div>
+        <div className="div3">
+          <h3>Fast Business</h3>
+          <p>Filtre por interesses comerciais e descubra pessoas para negociar.</p>
+        </div>
+        <div className="div4">
+          <h3>Se conheçam</h3>
+          <p>Filtre por interesses comerciais e descubra pessoas para negociar.</p>
+        </div>
         </>
   )
 }
