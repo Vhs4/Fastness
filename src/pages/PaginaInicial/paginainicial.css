@@ -65,3 +65,85 @@ span {
     width: 550px;
     height: 500px;
 }
+
+.carousel {
+    margin-top: 90px;
+}
+
+.h3-carrossel {
+    font-size: 80px;
+    color: #291458;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:#00BF63;
+}
+
+.div-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-around;
+    margin-top: 80px;
+}
+
+.info1 {
+    font-size: 20px;
+    background-color: #C7FFE4;
+    color: #291458;
+    width: 315px;
+    height: 310px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.info2 {
+    font-size: 20px;
+    background-color: #C7FFE4;
+    color: #291458;
+    width: 315px;
+    height: 310px;
+    border-radius: 30px;
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.info3 {
+    font-size: 20px;
+    background-color: #C7FFE4;
+    color: #291458;
+    width: 315px;
+    height: 310px;
+    border-radius: 30px;
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.div1-h2 {
+    font-size: 37px;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.div2-h2 {
+    font-size: 37px;
+    font-weight: bolder;
+    margin-left: 76px;
+}
+
+.div3-h2 {
+    font-size: 37px;
+    font-weight: bolder;
+    margin-left: 90px;
+}
+
+.div-button {
+    background-color: #291458;
+    color: white;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+}
