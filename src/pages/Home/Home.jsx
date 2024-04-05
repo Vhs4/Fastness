@@ -45,6 +45,7 @@ const Home = () => {
 </>
 )}
 </div>
+<div className="geral">
         <p className="p1">
         Crie laços <span className="span1">rápidos</span> e <br></br>  
         feche <span className="span1">negócios</span> em <br></br>
@@ -98,9 +99,10 @@ const Home = () => {
             <p className="p4section2">Descubra lugares <br></br>para marcar encontros <br></br>comerciais e potencializar seus negócios!</p>
           </div>
         </section>
+        </div>
         <footer>
-          <p className="footer">© 2024 - Fastness, Todos os direitos reservados</p>
-        </footer>
+          <p className="footer1">© 2024 - Fastness, Todos os direitos reservados</p>
+        </footer> 
         </div>
         </>
   )
