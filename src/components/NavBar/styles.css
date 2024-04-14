@@ -1,7 +1,6 @@
 .mobile-menu2 {
     @media(max-width:768px) {
-    position: absolute;
-     margin-top:-40px;
+    position: fixed;
      width:100%;
      background-color: #291458;
     }
