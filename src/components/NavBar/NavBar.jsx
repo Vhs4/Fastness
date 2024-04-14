@@ -7,7 +7,7 @@ const NavBar = () => {
     function menuShow() {
       setNavMenu(!navMenu);
       let menuMobile = document.querySelector('.mobile-menu2');
-      let icon = document.querySelector('.icon') as HTMLImageElement;
+      let icon = document.querySelector('.icon')
 
       if (menuMobile && icon) {
         if (menuMobile.classList.contains('open')) {

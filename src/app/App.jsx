@@ -19,7 +19,7 @@ max-w-screen-md:max-w-[428px]'>
           <Route path="/criar-conta" element={<CriarConta />} />
           <Route path="/pagina-inicial" element={<PaginaInicial />} />
           <Route path='/*' element={
-            <div className='max-w-100vw min-h-1138px max-h-100% flex m-custom-auto justify-center
+            <div className='max-w-100vw min-h-1138px max-h-full flex m-custom-auto justify-center
               max-w-[768px]:flex max-w-[768px]:max-w-full'>
               <Routes>
                 <Route path='/restaurantes' element={<Restaurantes />} />

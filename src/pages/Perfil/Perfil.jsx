@@ -1,7 +1,10 @@
 import React from 'react';
 import './perfil.css';
+import { useForm } from 'react-hook-form';
 
 export const Perfil = () => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
     const [navMenu, setNavMenu] = React.useState(false)
     function menuShow() {
         setNavMenu(!navMenu)
@@ -14,9 +17,13 @@ export const Perfil = () => {
             document.querySelector('.icon').src = "img/menuabertoo.png";
         }
     }
+
+    const onSubmit = (data) => {
+        console.log(data);
+    }
         return (
             <>
-                <div className="containerGeral">
+                <div className="containerGeral mt-20 w-custom-769:w-[100vw]">
                     <nav className="navP">
                         <img src="/img/logo.png" className="img_nav" alt="logo fastness"></img>
                         <ul>
@@ -51,19 +58,22 @@ export const Perfil = () => {
                         <button></button>
                         <h3>Nome do usuário</h3>
 
-                        <form action="" className="formuser">
+                        <form onSubmit={handleSubmit(onSubmit)} className="formuser">
 
                             <div>
                                 <label htmlFor="empresa" className="label_block">Empresa:</label>
-                                <input type="text" id="empresa" name="empresa" />
+                                <input type="text" id="empresa" {...register('empresa', {required: 'Este campo é obrigatório'})} />
+                                {errors.empresa && <p className="error text-red-500">{errors.empresa.message}</p>}
                             </div>
                             <div>
                                 <label htmlFor="ramo" className="label_block">Ramo comercial:</label>
-                                <input type="text" id="ramo" name="ramo" />
+                                <input type="text" id="ramo" {...register('ramo', {required: 'Este campo é obrigatório'})} />
+                                {errors.ramo && <p className="error text-red-500">{errors.ramo.message}</p>}
                             </div>
                             <div>
                                 <label htmlFor="celular" className="label_block">Celular:</label>
-                                <input type="text" id="celular" name="celular" placeholder="(xx)x.xxxx-xxxx" />
+                                <input type="tel" id="celular" {...register('celular', {required: 'Este campo é obrigatório'})} placeholder="(xx)x.xxxx-xxxx" />
+                                {errors.celular && <p className="error text-red-500">{errors.celular.message}</p>}
                             </div>
                             <button type="submit">Salvar</button>
 
