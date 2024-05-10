@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -21,9 +22,8 @@ const Home = () => {
         <nav className="navP">
           <img src="/img/logo.png" className="img_nav" alt="logo fastness"></img>
         <ul>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Benefícios</a></li>
-            <li className=""><a href="">Entrar</a></li>
+            <li><Link to='/beneficios'>Benefícios</Link></li>
+            <li className=""><Link to='/login'>Entrar</Link></li>
         </ul>
         <button className="header_button">Cadastre-se</button>
 
@@ -37,15 +37,14 @@ const Home = () => {
 {navMenu && (
 <>
         <ul>
-            <li><a href="#" className="nav-item">Sobre</a></li>
-            <li><a href="#" className="nav-item">Benefícios</a></li>
-            <li><a href="" className="nav-item">Entrar</a></li>
+            <li><Link to="/sobre" className="nav-item">Sobre</Link></li>
+            <li><Link to="/" className="nav-item">Benefícios</Link></li>
+            <li><Link to="/criar-conta" className="nav-item">Entrar</Link></li>
         </ul>
         <button className="header_button">Cadastre-se</button>
 </>
 )}
 </div>
-<div className="geral">
         <p className="p1">
         Crie laços <span className="span1">rápidos</span> e <br></br>  
         feche <span className="span1">negócios</span> em <br></br>
@@ -99,10 +98,9 @@ const Home = () => {
             <p className="p4section2">Descubra lugares <br></br>para marcar encontros <br></br>comerciais e potencializar seus negócios!</p>
           </div>
         </section>
-        </div>
         <footer>
-          <p className="footer1">© 2024 - Fastness, Todos os direitos reservados</p>
-        </footer> 
+          <p className="footer">© 2024 - Fastness, Todos os direitos reservados</p>
+        </footer>
         </div>
         </>
   )

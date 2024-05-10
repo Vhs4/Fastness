@@ -1,5 +1,6 @@
 import React from 'react'
 import './paginainicial.css';
+import { Link } from 'react-router-dom';
 
 export const PaginaInicial = () => {
     const [navMenu, setNavMenu] = React.useState(false)
@@ -20,9 +21,9 @@ export const PaginaInicial = () => {
         <nav className="navP">
           <img src="/img/logo.png" className="img_nav" alt="logo fastness"></img>
         <ul>
-            <li><a href="">Início</a></li>
-            <li><a href="">Negócios</a></li>
-            <li><a href="">Locais</a></li>
+            <li><Link to="/">Início</Link></li>
+            <li><Link to="/negocios">Negócios</Link></li>
+            <li><Link to="/restaurantes">Locais</Link></li>
             <li className=""><a href="">Chat</a></li>
             <li><img src="/img/iconeboneco23.png" alt="" /></li>
         </ul>
@@ -36,10 +37,10 @@ export const PaginaInicial = () => {
 {navMenu && (
 <>
         <ul>
-            <li><a href="#" className="nav-item">Início</a></li>
-            <li><a href="#" className="nav-item">Negócios</a></li>
-            <li><a href="#" className="nav-item">Locais</a></li>
-            <li><a href="" className="nav-item">Chat</a></li>
+            <li><Link to="/" className="nav-item">Início</Link></li>
+            <li><Link to="/negocios" className="nav-item">Negócios</Link></li>
+            <li><Link to="/restaurantes" className="nav-item">Locais</Link></li>
+            <li><Link to="/chat" className="nav-item">Chat</Link></li>
         </ul>
 </>
 )}

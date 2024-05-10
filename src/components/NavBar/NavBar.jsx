@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [navMenu, setNavMenu] = React.useState(false);
@@ -24,10 +25,10 @@ const NavBar = () => {
     <nav className="navP">
     <img src="/img/logo.png" className="img_nav" alt="logo fastness"></img>
   <ul>
-      <li><a href="">Início</a></li>
-      <li><a href="">Negócios</a></li>
-      <li><a href="">Locais</a></li>
-      <li className=""><a href="">Chat</a></li>
+      <li><Link to="/">Início</Link></li>
+      <li><Link to="/negocios">Negócios</Link></li>
+      <li><Link to="/restaurantes">Locais</Link></li>
+      <li className=""><Link to="/chat">Chat</Link></li>
       <li><img src="/img/iconeboneco23.png" alt="" /></li>
   </ul>
   <div className="mobile-menu-icon">

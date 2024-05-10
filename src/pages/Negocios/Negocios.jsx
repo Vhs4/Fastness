@@ -1,4 +1,3 @@
-import React from 'react'
 import './negocios.css';
 import NavBar from '../../components/NavBar/NavBar';
 
@@ -6,9 +5,7 @@ const Negocios = () => {
     return (
         <>
             <div className="containerGeral">
-
                 <NavBar />
-
                 <section className="section_profissionais23">
                     <h2 className="h2-profissionais">
                         Profissionais disponíveis para negócios imediatos - Fast Business:
@@ -30,7 +27,6 @@ const Negocios = () => {
                         <p className="p-pessoas">Pietro Dourado - <br></br> Representante da(o) Amazon</p>
                     </div>
                 </section>
-
                 <section className="section-persona">
                     <h2 className="h2-ramos">
                         Profissionais do ramo de social media:
@@ -53,7 +49,6 @@ const Negocios = () => {
                         <p className="p-persona">XXXXX - <br></br> Representante da(o) XXXXX</p>
                     </div>
                 </section>
-
                 <section className="section-persona">
                     <h2 className="h2-ramos">
                         Profissionais do ramo de transporte:
@@ -76,7 +71,6 @@ const Negocios = () => {
                         <p className="p-persona">XXXXX - <br></br> Representante da(o) XXXXX</p>
                     </div>
                 </section>
-
                 <section className="section-persona">
                     <h2 className="h2-ramos">
                         Profissionais do ramo de design:
@@ -99,9 +93,7 @@ const Negocios = () => {
                         <p className="p-persona">XXXXX - <br></br> Representante da(o) XXXXX</p>
                     </div>
                 </section>
-
                 <img src="/img/negociosfundo.png" alt="fundonegocios" className="negociosfundo"></img>
-
                 <section className="section-ramos33">
                     <h2 className="h2-ramos">
                         Profissionais separados por ramo:
@@ -126,22 +118,10 @@ const Negocios = () => {
                         </div>
                     </div>
                 </section>
-
                 <footer>
                     <p className="footer">© 2024 - Fastness, Todos os direitos reservados</p>
                 </footer>
-
             </div>
-
-
-
-
-
-
-
-
-
-
         </>
     )
 }

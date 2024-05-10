@@ -1,15 +1,16 @@
+import React from 'react';
 import Logo from '../../../public/svgs/Logo';
-import { useForm } from 'react-hook-form';
+import { FieldValues, useForm } from 'react-hook-form';
 import { useValidarIdade } from '../../hooks/useValidarIdade';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
-const CriarConta = () => {
+const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const validarIdade = useValidarIdade()
     const navigate = useNavigate()
 
-    const onSubmit = (data) => {
+    const onSubmit = (data: FieldValues) => {
         console.log(data);
         toast.success('Cadastro realizado com sucesso!');
     };
@@ -18,14 +19,14 @@ const CriarConta = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='overflow-hidden'>
                         <div className="row d-flex">
-                            <div className="col-md-6 bg-[#291458] flex justify-center items-center text-white">
-                                <div className='d-flex flex-column gap-1 justify-center items-center h-[100vh]'>
-                                    <h1 className='mb-[60px] px-8'>Que bom que voltou!</h1>
-                                    <p className='px-8'>Conecte-se com seu login de acesso <br /> para aproveitar nossa <span className='text-[#00BF63]'>velocidade</span></p>
+                            <div className="col-md-6 bg-[#291458] flex justify-center items-center text-white h-dvh">
+                                <div className='d-flex flex-column gap-1 justify-center items-center'>
+                                    <h1 className='mb-[60px]'>Primeira vez por aqui?</h1>
+                                    <p>Crie sua conta<br /> para aproveitar nossa <span className='text-[#00BF63]'>velocidade</span></p>
                                     <button className='mt-[62px] border border-solid border-white p-3 rounded-lg h-[45px] flex items-center'
-                                    onClick={() => navigate('/login')}
+                                    onClick={() => navigate('/criar-conta')}
                                     >
-                                        Fazer login
+                                        Ir para criar conta
                                     </button>
                                 </div>
                             </div>
@@ -35,13 +36,7 @@ const CriarConta = () => {
                                     <div className='flex items-center justify-center'>
                                         <Logo className='mt-4 ' />
                                     </div>
-                                    <h3 className='font-bold text-center'>Crie sua conta</h3>
-                                    <label className='mt-8 font-bold'>Nome completo</label>
-                                    <input {...register("nome", { required: "Nome é obrigatório" })}
-                                        className='bg-[#d9d9d9] rounded-md md:w-[400px] h-8 flex pl-4'
-                                        type="text" placeholder='Insira seu nome' />
-                                    {errors.nome && <p className='text-red-500'>{errors.nome.message}</p>}
-
+                                    <h3 className='font-bold text-center'>Entrar na sua conta</h3>
                                     <label className='mt-8 font-bold'>Email</label>
                                     <input {...register("email",
                                         { required: "Email é obrigatório", pattern: { value: /^\S+@\S+$/i, message: "Email inválido" } })}
@@ -49,19 +44,11 @@ const CriarConta = () => {
                                         type="email" placeholder='Insira seu e-mail' />
                                     {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
 
-                                    <label className='mt-8 font-bold'>Data de nascimento</label>
-                                    <input {...register("nascimento", { required: "Data de nascimento é obrigatória", validate: validarIdade })}
-                                        className='bg-[#d9d9d9] rounded-md md:w-[400px] justify-center h-8 flex pl-4'
-                                        type="date" placeholder='Insira sua data de nascimento' />
-                                    {errors.nascimento && <p className='text-red-500'>{errors.nascimento.message}</p>}
-
                                     <label className='mt-8 font-bold'>Senha</label>
-                                    <input {...register("password", { required: "Senha é obrigatória" })} className='bg-[#d9d9d9]
-                                    rounded-md md:w-[400px] h-8 flex pl-4' type="password" placeholder='Insira sua senha' />
+                                    <input {...register("password", { required: "Senha é obrigatória" })} className='bg-[#d9d9d9] rounded-md md:w-[400px] h-8 flex pl-4' type="password" placeholder='Insira sua senha' />
                                     {errors.password && <p className='text-red-500'>{errors.password.message}</p>}
                                     <div className='flex justify-center'>
-                                        <button className='mt-12 w-36 h-12 rounded-md mb-4 text-white bg-[#00BF63]'
-                                        type='submit'>Cadastrar</button>
+                                        <button className='mt-12 w-36 h-12 rounded-md text-white bg-[#00BF63]' type='submit'>Login</button>
                                     </div>
                                 </div>
                             </div>
@@ -71,4 +58,4 @@ const CriarConta = () => {
     );
 };
 
-export default CriarConta;
+export default Login;

@@ -5,6 +5,8 @@ import { PaginaInicial } from '../pages/PaginaInicial/PaginaInicial'
 import Negocios from '../pages/Negocios/Negocios'
 import { Perfil } from '../pages/Perfil/Perfil'
 import Restaurantes from '../pages/Restaurantes/Restaurantes'
+import Chat from '../pages/Chat/Chat'
+import Login from '../pages/Login/Login'
 
 function App() {
 
@@ -17,9 +19,12 @@ max-w-screen-md:max-w-[428px]'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/criar-conta" element={<CriarConta />} />
-          <Route path="/pagina-inicial" element={<PaginaInicial />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/beneficios" element={<PaginaInicial />} />
+          <Route path='/chat' element={<Chat />} />
+
           <Route path='/*' element={
-            <div className='max-w-100vw min-h-1138px max-h-full flex m-custom-auto justify-center
+            <div className='max-h-full flex m-custom-auto justify-center
               max-w-[768px]:flex max-w-[768px]:max-w-full'>
               <Routes>
                 <Route path='/restaurantes' element={<Restaurantes />} />
