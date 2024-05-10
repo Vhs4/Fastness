@@ -1,16 +1,13 @@
-import React from 'react';
 import Logo from '../../../public/svgs/Logo';
-import { FieldValues, useForm } from 'react-hook-form';
-import { useValidarIdade } from '../../hooks/useValidarIdade';
+import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const validarIdade = useValidarIdade()
     const navigate = useNavigate()
 
-    const onSubmit = (data: FieldValues) => {
+    const onSubmit = (data) => {
         console.log(data);
         toast.success('Cadastro realizado com sucesso!');
     };
